@@ -1,4 +1,10 @@
-const todoTasks = [
+type todoTasksProps = {
+  id: number;
+  taskName: string;
+  completed: boolean;
+};
+
+const todoTasks: todoTasksProps[] = [
   {
     id: 0,
     taskName: "take umbrella",
