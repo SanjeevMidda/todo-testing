@@ -9,14 +9,14 @@ const Todo = ({ todoName, completionStatus }: TodoProps) => {
   const [check, setCheck] = useState<boolean>(completionStatus);
 
   return (
-    <>
+    <div className="todoContainer">
       <p>{todoName}</p>
       <input
         type="checkbox"
         onChange={() => setCheck((prev) => !prev)}
         checked={check}
       />
-    </>
+    </div>
   );
 };
 
