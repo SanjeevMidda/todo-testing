@@ -5,6 +5,7 @@ import todoData from "./data/todoData";
 function App() {
   return (
     <div className="App">
+      <h1>TODO</h1>
       {todoData.map((i) => {
         return (
           <Todo
